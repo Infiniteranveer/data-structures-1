@@ -102,7 +102,35 @@ int main()
 {
 	create_ll list;
 //	list.InsertAtStart(0);
-	list.InsertAtEnd(12);
+	int c;
+	while(1){
+		cout<<"\n\t 1. InsertAtStart 2. InsertAtEnd 3. DeleteAtFirst 4. DeleteAtEnd 5. Display ";
+		cin>>c;
+		if(c==1){
+			int e;
+			cout<<"\n\t Enter element : ";
+			cin>>e;
+			list.InsertAtFirst(e);
+		}
+		else if(c==2){
+			int e;
+			cout<<"\n\t Enter element : ";
+			cin>>e;
+			list.InsertAtEnd(e);
+		}
+		else if(c==3)
+			list.DeleteAtstart();	
+		else if(c==4)
+			ist.DeleteAtEnd();
+		else if(c==5)
+			ist.display();
+		else
+			return 0;
+		
+		
+			
+	}
+	/*list.InsertAtEnd(12);
 	list.InsertAtEnd(80);
 	list.InsertAtEnd(32);
 //	list.InsertAtStart(101);
@@ -114,6 +142,6 @@ int main()
 	//list.DeleteAtstart();
 	//list.DeleteAtstart();
 //	list.DeleteAtstart(); deletion wil not be performed as the list will be empty at this point
-	list.display();
+	list.display();*/
 	return 0;
 }
